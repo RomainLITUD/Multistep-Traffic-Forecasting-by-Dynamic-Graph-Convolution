@@ -383,7 +383,7 @@ class DGCRNNCell(Layer):
         shapes_1 = (input_shape[0], input_shape[1], 1)
             
         if self.dgc_mode == 'hybrid':
-            self.dgc_r = LocallyConnectedGC(1)#, depthwise=False
+            self.dgc_r = LocallyConnectedGC(2)#, depthwise=False
             self.dgc_r.build(shapes)
             wr_1 = self.dgc_r.trainable_weights
 
@@ -391,7 +391,7 @@ class DGCRNNCell(Layer):
             self.lin_r.build(shapes)
             wr_2 = self.lin_r.trainable_weights
 
-            self.dgc_u = LocallyConnectedGC(1)#, depthwise=False
+            self.dgc_u = LocallyConnectedGC(2)#, depthwise=False
             self.dgc_u.build(shapes)
             wu_1 = self.dgc_u.trainable_weights
 
@@ -399,7 +399,7 @@ class DGCRNNCell(Layer):
             self.lin_u.build(shapes)
             wu_2 = self.lin_u.trainable_weights
 
-            self.dgc_c = LocallyConnectedGC(1)#, depthwise=False
+            self.dgc_c = LocallyConnectedGC(2)#, depthwise=False
             self.dgc_c.build(shapes)
             wc_1 = self.dgc_c.trainable_weights
 
