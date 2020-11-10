@@ -7,9 +7,9 @@ For more datasets please visit DittLab-TUD: https://dittlab.tudelft.nl/,
 or our online traffic dynamics visualization website: http://dittlab-apps.tudelft.nl/apps/app-ndw/home.jsp.
 
 ## File strucuture
-```bash
+
 .
-|***custom_models
+|---custom_models
   |---layers_keras.py
   |---model_keras.py
   |---math-utils.py
@@ -17,4 +17,3 @@ or our online traffic dynamics visualization website: http://dittlab-apps.tudelf
 |---DGCRNN.ipynb
 |---model_interpretation.ipynb
 |---utils_vis.py
-```
