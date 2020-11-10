@@ -7,13 +7,15 @@ For more datasets please visit DittLab-TUD: https://dittlab.tudelft.nl/,
 or our online traffic dynamics visualization website: http://dittlab-apps.tudelft.nl/apps/app-ndw/home.jsp.
 
 ## File strucuture
-
+```bash
 .
-|---custom_models
-  |---layers_keras.py
-  |---model_keras.py
-  |---math-utils.py
-|---pretrained
-|---DGCRNN.ipynb
-|---model_interpretation.ipynb
-|---utils_vis.py
+|-custom_models
+  |-layers_keras.py                # custom keras layers and DGCN RNN cell
+  |-model_keras.py                 # construct DGCN model
+  |-math-utils.py                  # mathematical tools
+|-pretrained                  # pre-trained models to reproduce the results in the paper
+|-DGCRNN.ipynb                # train/test the model, visualize predictions
+|-model_interpretation.ipynb  # interpret dynamic spatial correlations
+|-utils_vis.py                # visulization tools
+```
+
