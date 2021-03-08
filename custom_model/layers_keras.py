@@ -9,9 +9,10 @@ from keras.layers import Layer, Dense, LeakyReLU, Dropout, Reshape, Flatten
 from keras.callbacks import Callback, EarlyStopping, ModelCheckpoint
 ############################
 
-dim = 208
+dim = 208 # number of nodes
 # construct adjacency matrix and scaled Laplacian for a circle graph with dim nodes
-A = adjacency_matrix(dim)
+A = adjacency_matrix(dim) # for ROTnet
+#Ad, Au, A = directed_adj() # for AMSnet
 scaled_laplacian = normalized_laplacian(A)
 
 ############################
