@@ -6,7 +6,11 @@ An example of the dataset used in the article (RotCC2) can be downloaded here: h
 
 For more datasets please visit DittLab-TUD: https://dittlab.tudelft.nl/,
 
-or our online traffic dynamics visualization website: http://dittlab-apps.tudelft.nl/apps/app-ndw/home.jsp.
+or our online traffic dynamics visualization website: http://dittlab-apps.tudelft.nl/apps/app-ndw/home.jsp,
+
+or directly send an email to one of the author:  G.Li-5@tudelft.nl
+
+To reproduce the results in the paper, please put the corresponding datasets in the "Datasets" file
 
 ![archi](https://user-images.githubusercontent.com/48381256/98677777-cd67e180-235d-11eb-9fd6-4aaaefc790f1.PNG)
 
@@ -31,7 +35,7 @@ or our online traffic dynamics visualization website: http://dittlab-apps.tudelf
 * statsmodels
 * tensorflow 2.2.0
 * keras 2.2.0
+* networkx 2.5.0 (for tracking attention distribution in a complex graph)
 
 \* for early versions of tensorflow and keras the modelcheckpoint may fail.
-
 
