@@ -1,6 +1,33 @@
 import numpy as np
 import scipy.sparse as sp
 import keras.backend as K
+import networkx as nx
+
+def directed_adj():
+    acc = [-1,36,49,61,79,105,116,151,162,200]
+    
+    base = np.identity(201,dtype=bool)
+    
+    for i in range(0,201):
+        if i not in acc:
+            base[i][i+1]=True
+            
+    base[36][37]=True
+    base[36][80]=True
+    base[49][50]=True
+    base[116][50]=True
+    base[105][106]=True
+    base[105][117]=True
+    base[61][62]=True
+    base[61][152]=True
+    base[162][163]=True
+    base[151][163]=True
+    base[200][0]=True
+    base[79][0]=True
+    
+    both = np.logical_or(base, base.transpose())
+    
+    return base.astype(int), base.transpose().astype(int), both.astype(int)
 
 def adjacency_matrix(n):
     S = np.zeros((n,n))
