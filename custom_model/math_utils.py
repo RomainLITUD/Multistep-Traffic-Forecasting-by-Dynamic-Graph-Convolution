@@ -214,6 +214,49 @@ def Compare(ground_truth, weights, k):
     
     return f_value
 
+def Track(data, mask, Ad, Au, A, k, node):
+    
+    nb_samples, time_steps, N = data.shape
+    
+    G = nx.from_numpy_matrix(A)
+    dis = dict(nx.all_pairs_shortest_path_length(G))
+    
+    Ak = LA.matrix_power(A, k)
+    
+    lg = np.count_nonzero(mask[0][0][node])
+    print(lg, 'nodes')
+    
+    speed = np.zeros((nb_samples, time_steps, lg))
+    weights = np.zeros((nb_samples, time_steps, lg))
+    
+    index = []
+        
+                
+    for i in range(N):
+        if Ak[node][i] != 0:
+            index.append(i)
+    
+    print(index)
+    
+    for i in range(nb_samples):
+        for j in range(time_steps):
+            m = mask[i][j][node] #N
+            raw = data[i][j]
+                
+            v = []
+            w = []
+            
+                
+            for r in range(N):
+                if m[r] != 0:
+                    v.append(raw[r])
+                    w.append(m[r])
+                
+            speed[i][j] = np.array(v)
+            weights[i][j] = np.array(w)
+            
+    return speed, weights
+
 
 def z_score(x, mean, std):
     return (x - mean) / std
