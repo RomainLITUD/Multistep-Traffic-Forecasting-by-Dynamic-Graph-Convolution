@@ -1,6 +1,6 @@
 # Multistep Traffic Forecasting by Dynamic Graph Convolution: Interpretations of Real-Time Spatial Correlations
 
-This is the open source Keras code of the proposed Dynamic Graph Convolutional Networks (DGCN), a multistep network-level traffic condition forecasting model that can capture and explicitly give explainable spatial correlations among road links.
+This is the open source Keras code of the proposed Dynamic Graph Convolutional Networks (DGCN), a multistep network-level traffic condition forecasting model that can capture and explicitly give explainable spatial correlations among road links. The code will be continously optimized and updated later.
 
 An example of the dataset used in the article (RotCC2) can be downloaded here: https://drive.google.com/file/d/1UCWmA-vLp3LSu1IFSiwdVMXSvdfsVFf9/view?usp=sharing.
 
@@ -33,8 +33,8 @@ To reproduce the results in the paper, please put the corresponding datasets in 
 * numpy 1.12.1
 * h5py
 * statsmodels
-* tensorflow 2.2.0
-* keras 2.2.0
+* tensorflow 1.14.0 or 1.15.0
+* keras 2.3.1 or 2.2.5
 * networkx 2.5.0 (for tracking attention distribution in a complex graph)
 
 \* for early versions of tensorflow and keras the modelcheckpoint may fail.
