@@ -6,6 +6,16 @@ An example of the dataset used in the article (RotCC2) can be downloaded here: h
 
 For more datasets please visit DittLab-TUD: https://dittlab.tudelft.nl/, or our online traffic dynamics visualization website: http://dittlab-apps.tudelft.nl/apps/app-ndw/home.jsp, or directly send an email to one of the author:  G.Li-5@tudelft.nl
 
+The meta-description of the dataset is as follows. `e_train` is the labels for scheduled sampling:
+```bash
+x_train = Data['Speed_obs_train']
+y_train = Data['Speed_pred_train']
+e_train = Data['E_train']
+x_test = Data['Speed_obs_test']
+y_test = Data['Speed_pred_test']
+e_test = Data['E_test']
+```
+
 To reproduce the results in the paper, please put the corresponding datasets in the "Datasets" file. A command-line parsed `.py` file will be added before 1st Feb.
 
 ![archi](https://user-images.githubusercontent.com/48381256/98677777-cd67e180-235d-11eb-9fd6-4aaaefc790f1.PNG)
