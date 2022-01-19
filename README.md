@@ -6,7 +6,7 @@ An example of the dataset used in the article (RotCC2) can be downloaded here: h
 
 For more datasets please visit DittLab-TUD: https://dittlab.tudelft.nl/, or our online traffic dynamics visualization website: http://dittlab-apps.tudelft.nl/apps/app-ndw/home.jsp, or directly send an email to one of the author:  G.Li-5@tudelft.nl
 
-The meta-description of the dataset is as follows. `e_train` is the labels for scheduled sampling:
+The meta-description of the dataset is as follows. `x_train` is the observed speed, `e_train` is the input labels for scheduled sampling, `y_train` is labeld to be predicted, the same for test set:
 ```bash
 x_train = Data['Speed_obs_train']
 y_train = Data['Speed_pred_train']
