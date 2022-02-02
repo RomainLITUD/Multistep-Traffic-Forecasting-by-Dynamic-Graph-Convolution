@@ -16,7 +16,7 @@ y_test = Data['Speed_pred_test']
 e_test = Data['E_test']
 ```
 
-To reproduce the results in the paper, please put the corresponding datasets in the "Datasets" file. A command-line parsed `.py` file will be added before 1st Feb.
+To reproduce the results in the paper, please put the corresponding datasets in the "Datasets" file. A command-line parsed `.py` file will be added before 1st March.
 
 ![archi](https://user-images.githubusercontent.com/48381256/98677777-cd67e180-235d-11eb-9fd6-4aaaefc790f1.PNG)
 
