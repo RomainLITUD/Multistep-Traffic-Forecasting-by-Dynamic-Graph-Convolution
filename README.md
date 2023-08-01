@@ -3,7 +3,9 @@
 ## !UPDATE!
 This repository uses a very old version of Tensorflow (1.14.0) and Keras (2.3.1). To make the code easier to use, we extend the dynamic graph convolutional module to uncertainty-aware multiple traffic quantities prediction and demand estimation. The new source code converts the layers in this paper to the newest version of PyTorch. An interactive online web application is also provided to give predictions and model interpretations. Please go to [this new page](https://github.com/RomainLITUD/uncertainty-aware-traffic-speed-flow-demand-prediction) for more details. This old repository will not be updated.
 
-\ \ 
+-------------------------------------------------
+-------------------------------------------------
+-------------------------------------------------
 
 This is the open source Keras code of the proposed Dynamic Graph Convolutional Networks (DGCN), a multistep network-level traffic condition forecasting model that can capture and explicitly give understandable spatial correlations among road links.
 
