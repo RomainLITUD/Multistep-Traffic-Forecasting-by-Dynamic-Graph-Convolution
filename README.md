@@ -1,5 +1,9 @@
 # Multistep Traffic Forecasting by Dynamic Graph Convolution: Interpretations of Real-Time Spatial Correlations
 
+## Online demo
+
+We have an online Streamlit App to show how the extended version of this model works. Please go to [this page](https://nltrafficpredictiondemo-ekpqd7e8sdue92ewyttuuw.streamlit.app/) for the interactive demo. The related code is available [here](https://github.com/RomainLITUD/NL_Traffic_Prediction_Demo).
+
 ## !UPDATE!
 This repository uses a very old version of Tensorflow (1.14.0) and Keras (2.3.1). To make the code easier to use, we extend the dynamic graph convolutional module to uncertainty-aware multiple traffic quantities prediction and demand estimation. The new source code converts the layers in this paper to the newest version of PyTorch. An interactive online web application is also provided to give predictions and model interpretations. Please go to [this new page](https://github.com/RomainLITUD/uncertainty-aware-traffic-speed-flow-demand-prediction) for more details. This old repository will not be updated.
 
